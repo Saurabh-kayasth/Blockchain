@@ -59,12 +59,12 @@ Definition : A blockchain is a continuously growing list of records called block
 * The more number of peers , the harder it is possible to attack.
 
 ## 5 : How mining works ( Nonce )
-#### To compute a hash for a particular block we take block no, previous hash, and data. So,
-#### What's the whole fuss about mining ?
-#### Why are there so many mining rigs around the world ?
-#### Why is lots of computation power dedicated to a computer ?
-#### What’s the competition that everybody is in ?
-#### So, there is another field in the block which is known as Nonce.
+To compute a hash for a particular block we take block no, previous hash, and data. So,
+What's the whole fuss about mining ?
+Why are there so many mining rigs around the world ?
+Why is lots of computation power dedicated to a computer ?
+What’s the competition that everybody is in ?
+So, there is another field in the block which is known as Nonce.
 * Nonce : Number Used only once
 * This field is what mining is all about. Miners change this field only, for mining.
 * Nonce is mutable, we are freely allowed to change it.
