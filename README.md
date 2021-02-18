@@ -58,12 +58,25 @@ Definition : A blockchain is a continuously growing list of records called block
 * So to successfully attack on a blockchain the attacker will have to attack on more than 50% of the computers at the same time ( to make majority consensus ).
 * The more number of peers , the harder it is possible to attack.
 
-## 5 : How mining works
+## 5 : How mining works ( Nonce )
 #### To compute a hash for a particular block we take block no, previous hash, and data. So,
 #### What's the whole fuss about mining ?
 #### Why are there so many mining rigs around the world ?
 #### Why is lots of computation power dedicated to a computer ?
 #### What’s the competition that everybody is in ?
 #### So, there is another field in the block which is known as Nonce.
+* Nonce : Number Used only once
+* This field is what mining is all about. Miners change this field only, for mining.
+* Nonce is mutable, we are freely allowed to change it.
+* So basically nonce allows us to vary the Hash.
+* A small change in nonce changes the hash completely.
 
-
+## 6 : How mining works ( The cryptography puzzle )
+* A Hash is a number.
+* The blockchain algorithm sets the target for miners to accomplish a certain hash to create a block.
+* Any Hash above the target is not accepted.
+* This is a completely arbitrary process.
+* As in a block Nonce is mutable, so miners basically change the nonce until they find a nonce that generates Hash below the target Hash.
+* Once they (miners) find a required Nonce the new block is added and they get some reward.
+* As small change in nonce changes the Hash completely, so if changing the nonce world change little bit hash then the miners would know in which order (increasing/reducing) they have to change the nonce and because of that not every miner will get a chance of mining a block, which will not let them to win a reward.
+* Mining is all about solving cryptographic puzzles, and it needs lots of work, computing resources, electricity etc. On the other hand verifying a block is an easy process, it just needs data to generate Hash and after generating Hash it can be used to verify if the block is valid or not.
